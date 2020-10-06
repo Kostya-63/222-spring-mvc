@@ -26,7 +26,7 @@ public class HelloController {
     @GetMapping(value = "/cars")
     public String carTable(@RequestParam(value = "count", required = false, defaultValue = "5") int count, ModelMap model) {
         List<Car> cars = new ArrayList<>();
-        cars.add(new Car("Impresa WRX STI", 280, "4WD"));
+        cars.add(new Car("Импреза WRX STI", 280, "4WD"));
         cars.add(new Car("Lancer Evo IX", 291, "4WD"));
         cars.add(new Car("Celica GT-FOUR", 255, "4WD"));
         cars.add(new Car("Sport quattro S1", 450, "4WD"));
